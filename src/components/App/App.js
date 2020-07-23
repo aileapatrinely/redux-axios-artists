@@ -54,10 +54,10 @@ class App extends Component {
           </header>
           <br />
           {/* <Route exact path="/allArtists" component={ArtistList} /> */}
-          {/* <ArtistList
+          <ArtistList
             refreshArtists={this.refreshArtists}
             artistList={this.state.artists}
-          /> */}
+          />
           <Route exact path="/addArtist" component={AddArtist} />
         </div>
       </Router>
