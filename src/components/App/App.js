@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import ArtistList from './../ArtistList/ArtistList.js';
+import { connect } from 'react-redux';
 
 class App extends Component {
   // Called when the (App) component is created
@@ -50,4 +51,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect()(App);

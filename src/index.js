@@ -10,14 +10,11 @@ import logger from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 
-state = {
-  artists: [],
-};
-
 const artistReducer = (state = [], action) => {
   if (action.type === 'SET_ARTISTS') {
-    return [...state, action.payload];
+    return [action.payload];
   }
+  return state;
 };
 
 // The store is the big JavaScript Object that holds all of the information for our application
